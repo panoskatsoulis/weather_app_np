@@ -13,6 +13,7 @@ sudo docker exec -it <CONTAINER ID> bash
 From inside the container, run the backend in one terminal
 ```
 cd /weather_app_np
+. venv/bin/activate
 python backend/app_backend.py --debug
 ```
 
@@ -20,6 +21,7 @@ From inside the container, run clients in the other terminal (`ctrl-C` to kill)
 ```
 cd /weather_app_np
 emacs station_sim/sim-config.ini ## configure the clients, interval in sec
+. venv/bin/activate
 python3 station_sim/client.py
 ```
 
