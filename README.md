@@ -4,7 +4,7 @@ Download the docker and run it in the background, then open 2 terminals using th
 (you also may build the container from the build file, assuming that there is some ubuntu image available locally
 <br>`sudo docker build -t weather_app_np .`)
 ```
-sudo docker pull ghcr.io/panoskatsoulis/weather_app_np:v1
+sudo docker pull ghcr.io/panoskatsoulis/weather_app_np:v1.1
 sudo docker run -dit weather_app_np:latest bash
 sudo docker ps ## get the CONTAINER ID
 sudo docker exec -it <CONTAINER ID> bash
