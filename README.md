@@ -1,4 +1,4 @@
-### How to run fron uploaded container
+### How to run from uploaded container
 
 Download the docker and run it in the background, then open 2 terminals using the third command.
 (you may build the container from the build file, assuming that there is some ubuntu image available locally
