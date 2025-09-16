@@ -1,6 +1,6 @@
 ### How to run from uploaded container
 
-Download the docker and run it in the background, then open 2 terminals using the third command.
+Download the docker and run it in the background, then open 2 terminals using the fourth command below.
 (you also may build the container from the build file, assuming that there is some ubuntu image available locally
 <br>`sudo docker build -t weather_app_np .`)
 ```
@@ -32,7 +32,8 @@ sqlite3 backend.db "insert into stations (token) values ('31ATs5WxJcIzWVYx')" ##
 sqlite3 backend.db 'select * from stations' ## check it
 ```
 
-One should initiate the database if decides not to use the prepared sqlite file `backend/backend.db`. Once initiated, tokens should be registered to the stations table like above.
+One should initiate the database if decides not to use the prepared sqlite file `backend/backend.db`.
+Once initiated, tokens should be registered to the stations table like above.
 ```
 cd /weather_app_np
 python backend/app_backend.py --init ## creates new sqlite file
