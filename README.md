@@ -1,7 +1,7 @@
 ### How to run from uploaded container
 
 Download the docker and run it in the background, then open 2 terminals using the third command.
-(you may build the container from the build file, assuming that there is some ubuntu image available locally
+(you also may build the container from the build file, assuming that there is some ubuntu image available locally
 <br>`sudo docker build -t weather_app_np .`)
 ```
 sudo docker pull ghcr.io/panoskatsoulis/weather_app_np:v1
