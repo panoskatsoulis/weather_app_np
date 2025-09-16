@@ -31,3 +31,9 @@ openssl rand -base64 12 ## new tokens
 sqlite3 backend.db "insert into stations (token) values ('31ATs5WxJcIzWVYx')" ## insert the token
 sqlite3 backend.db 'select * from stations' ## check it
 ```
+
+One should initiate the database if decides not to use the prepared sqlite file `backend/backend.db`. Once initiated, tokens should be registered to the stations table like above.
+```
+cd /weather_app_np
+python backend/app_backend.py --init ## creates new sqlite file
+```
