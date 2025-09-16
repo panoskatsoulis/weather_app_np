@@ -76,3 +76,4 @@ if __name__ == "__main__":
         stations.append(station)
         threads.append(thread)
         thread.start()
+        time.sleep(0.1) # stupid concurrency safe
